@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.main-container {
+    background-color: rgb(4, 34, 88);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* menu styles*/
+.menu-container {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    align-items: center;
+    background-color: white;
+}
+
+.instructions > * {
+    text-align: center;
+}
+
+.sub-title {
+    color:rgba(34, 40, 49, 0.6);
+}
+.menu-container > *{
+    margin: 1em;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:0;
+    margin:0;
+}
+
+input {
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    background-color: #dbe2ef;
+    border: 2px solid #dbe2ef;
+    min-width: 0;
+}
+
+.start-btn {
+    padding: 0.5rem;
+}
+/* menu styles */
+
+/* endgame pop up styles */
+.endgame-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f7f7;
+    color: #222831;
+    border-radius: 0.5rem;
+    padding: 1em;
+    margin: auto;
+}
+
+.endgame-container > * {
+    margin: 1em;
+    text-align: center;
+}
+
+.new-game-btn {
+    width: 50%;
+}
+/* endgame pop up styles */
+
+.content-container {
+    display:none;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.header-container {
+    margin: 2em 0;
+    display: inline-block;
+    color:white;
+}
+/* scoreboard */
+.players {
+    display: flex;
+    justify-content: center;
+}
+
+.player-info {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+}
+
+span {
+    margin: 5px;
+}
+
+.current-player {
+    background-color: rgb(150, 150, 214);
+    color: white;
+}
+
+/* set up tic-tac-toe gameboard */
+.container {
+    text-align: center;
+}
+
+.gameboard-container {
+    background: black;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 1px;
+}
+
+.cell{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 2rem;
+    font-weight: bold;
+    background: white;
+}
+/* set up tic-tac-toe gameboard */
+
+.reset-btn {
+    margin-top: 2em;
+    width:150px;
+}
+
+
+.gameboard > div:hover {
+    background-color: rgb(150, 150, 214);
+}
+

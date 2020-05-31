@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class='main-container'>
+        <div class='menu-container' id='menu'>
+            <div class='instructions'>        
+                <h1>Let's play Tic Tac Toe!</h1>
+                <p class='sub-title'>Please enter player names.</p>
+            </div>
+            <div class='input-container'>
+                <div class='player1'>
+                    <h3>Player One:</h2>
+                    <input type='text' id='player-one' placeholder='Player One' required>
+                </div>
+                <div class='player2'>
+                    <h3>Player Two:</h2>
+                    <input type='text' id='player-two' placeholder='Player Two' required>
+                </div>
+            </div>
+            <button type='submit' class='start-btn' id='start'>Start Game</button>
+        </div>
+        <div class='endgame-container' id='endgame'>
+            <h1 id='result'>Player one won!</h1>
+            <button type='submit' class='new-game-btn' id='new-game'>New Game</button>
+        </div>
+        <div class='content-container' id='gameboard'>
+            <div class='header-container'>
+                <header>
+                    <h1>Tic Tac Toe</h1>
+                    <div class='players'>
+                        <div class='player-info player-1' id='playerOne'>
+                            <span>X</span>
+                            <span class='player-1-id'>Player 1</span>
+                            <span id='win-count-1'>-</span>
+                        </div>
+                        <div class='player-info player-2' id='playerTwo'>
+                            <span>O</span>
+                            <span class='player-2-id'>Player 2</span>
+                            <span id='win-count-2'>-</span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class='container'>
+                <div class='gameboard-container'>
+                    <div class='gameboard'>
+                        <div class='cell box-1' data-index='0' id='0'></div>
+                        <div class='cell box-2' data-index='1' id='1'></div>
+                        <div class='cell box-3' data-index='2' id='2'></div>
+                        <div class='cell box-4' data-index='3' id='3'></div>
+                        <div class='cell box-5' data-index='4' id='4'></div>
+                        <div class='cell box-6' data-index='5' id='5'></div>
+                        <div class='cell box-7' data-index='6' id='6'></div>
+                        <div class='cell box-8' data-index='7' id='7'></div>
+                        <div class='cell box-9' data-index='8' id='8'></div>
+                    </div>
+                </div>
+            </div>
+            <button class='reset-btn' id='reset'>New Game</button>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
