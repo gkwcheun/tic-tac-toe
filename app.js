@@ -180,9 +180,8 @@ newGameBtn.addEventListener('click', gameMonitor.newGame);
 
 
 
-// testing
+// run game
 
 gameMonitor.startGame();
 
-// testing
 
